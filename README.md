@@ -9,7 +9,7 @@ Create a REST API for use with the Backbone.js TodoMVC app.
 After completing this assignment, you should be able to:
 
 * Summarize the REST architecture.
-* Design a simple REST API.
+* Use Django Rest Framework to create an api
 
 ### Deliverables
 
