@@ -16,7 +16,12 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
+from api.views import DetailUpdateTodo
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^api/todo/(?P<pk>\d+)', DetailUpdateTodo.as_view(), name='api_todo_detail_update'),
+    url(r'^api/todo/', 'api.views.list_create_todo'),
+    url(r'^admin/', include(admin.site.urls)),
+
 ]
