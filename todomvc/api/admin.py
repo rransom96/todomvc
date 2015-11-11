@@ -1,5 +1,5 @@
 from django.contrib import admin
-from todo.models import Todo
+from api.models import Todo
 
 
 @admin.register(Todo)
